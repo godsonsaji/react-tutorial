@@ -1,3 +1,108 @@
-#h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-container img {
+  width: 150px;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  padding: 30px 50px;
+}
+
+.nav-items li {
+  padding: 0 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-items li:hover {
+  color: #ff7300;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+}
+
+.search-container input {
+  padding: 5px 20px;
+  border-radius: 4px;
+  border: 1px solid #000;
+}
+
+.search-container button {
+  margin-left: 10px;
+  padding: 10px 30px;
+  border: none;
+  background-color: #ff7300;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.search-container button:hover {
+  background-color: #fff;
+  border: 1px solid #ff7300;
+  color: #ff7300;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.card-container img {
+  width: 100%;
+  border-radius: 20px;
+  padding-bottom: 5px;
+}
+.card-container {
+  width: 300px;
+  height: auto;
+  padding: 10px 20px;
+}
+.text-container {
+  padding-left: 10px;
+}
+
+.text-container h1 {
+  line-height: 5px;
+  font-size: 24px;
+}
+
+.text-container .time {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+.text-container span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.text-container .cuisines,
+.location {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 4px;
+}
+
+.res-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 60px;
+}
+
+.card-container:hover {
+  transform: scale(0.95, 0.95);
+  transform-origin: center center;
+  transition: 0.1s ease-in;
 }
