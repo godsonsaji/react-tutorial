@@ -2,8 +2,8 @@ import { IMAGE_URL } from "../utils/constants";
 const ResCard = (props) => {
   const { resData } = props;
   const { name, avgRatingString, cuisines, locality, cloudinaryImageId } =
-    resData.card.card.info;
-  const { slaString } = resData.card.card.info.sla;
+    resData.info;
+  const { slaString } = resData.info.sla;
   return (
     <div className="card-container">
       <img src={IMAGE_URL + cloudinaryImageId}></img>
